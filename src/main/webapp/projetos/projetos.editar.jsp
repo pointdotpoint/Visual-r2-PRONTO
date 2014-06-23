@@ -4,6 +4,7 @@
 		<title>Cadastro de Projetos</title>
 
         <link rel="stylesheet" type="text/css" media="all" href="projetos.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../commons/cupertino/jquery-ui-1.8.4.custom.css" />
 
 	</head>
 	<body>
@@ -25,9 +26,10 @@
 					<form:input path="projeto.nome" cssClass="required" size="40"/>
 					<p>Nome</p>
 
-                    <button type="button" class="btn btn-default btn-lg">
-                        <span class="glyphicon glyphicon-star"></span> Star
-                    </button>
+                    <div class="form-group col-md-2">
+                        <label class="control-label" for="inputDefault">Default input</label>
+                        <input class="form-control" id="inputDefault" type="text">
+                    </div>
 
                         <div class="col-md-2">
                             <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
