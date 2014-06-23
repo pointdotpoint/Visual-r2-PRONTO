@@ -1,0 +1,68 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../main/config/ehcache.xsd">
+
+	<diskStore path="java.io.tmpdir" />
+
+	<defaultCache maxElementsInMemory="300" eternal="false"
+		timeToIdleSeconds="90" timeToLiveSeconds="150" overflowToDisk="false" />
+
+	<cache name="eternal" maxElementsInMemory="5000" eternal="true"
+		overflowToDisk="false" />
+
+	<!-- 18000 segundos => 5 horas -->
+	<cache name="zendeskOrganizations" maxElementsInMemory="20"
+		eternal="false" timeToIdleSeconds="18000" timeToLiveSeconds="18000"
+		overflowToDisk="false">
+	</cache>
+
+	<cache name="zendeskUsers" maxElementsInMemory="20" eternal="false"
+		timeToIdleSeconds="18000" timeToLiveSeconds="18000" overflowToDisk="false">
+	</cache>
+
+	<cache name="zendeskTickets" maxElementsInMemory="40" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="300" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.Usuario"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="300" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.Sprint"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.Configuracao"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.Cliente"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.CausaDeDefeito"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+
+	<cache name="br.com.bluesoft.pronto.model.Categoria"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+	
+	<cache name="br.com.bluesoft.pronto.model.Milestone"
+		maxElementsInMemory="40" eternal="false" timeToIdleSeconds="600"
+		timeToLiveSeconds="600" overflowToDisk="false">
+	</cache>
+
+	<!-- Query Cache -->
+	<cache name="eternal.query.cache" maxElementsInMemory="1000"
+		eternal="true" overflowToDisk="false" />
+	<cache name="rarely.updated.query.cache" maxElementsInMemory="100"
+		eternal="false" overflowToDisk="false" timeToLiveSeconds="300" />
+
+
+</ehcache>

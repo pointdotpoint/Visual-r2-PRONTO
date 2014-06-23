@@ -1,0 +1,133 @@
+.bloco {
+	clear: left;
+}
+
+.ui-widget-content p {
+	clear: none;
+}
+
+#divReporter, #divZendesk, #divResponsavel {
+	float: right;
+}
+
+.bloco div {
+	float: left;
+	width: 250px;
+	position: relative;
+}
+
+.linha {
+	clear: both;
+}
+
+.person-comentario {
+	display: block;
+	float: left;
+	padding-right: 25px;
+	padding-bottom: 15px;
+}
+
+.comentario {
+	min-height: 75px;
+}
+
+.comentario-data {
+	font-size: 10px;
+	color: #5aa7d4;
+	float: right;
+}
+
+.comentario-html {
+	font-size: 13px;
+	line-height: normal;
+	margin-left: 100px;
+}
+
+#listaHistorico {
+	list-style-type: none;
+}
+
+#listaHistorico h4 {
+	margin-top: 12px;
+}
+
+#listaHistorico li {
+	margin-left: 25px;
+	color: #888888;
+}
+
+#listaMovimentos {
+	list-style-type: none;
+}
+
+#listaMovimentos h4 {
+	margin-top: 12px;
+}
+
+#listaMovimentos li {
+	margin-left: 25px;
+	color: #888888;
+}
+
+#listaTarefas {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#listaTarefas li {
+	margin: 0 5px 5px 5px;
+	padding: 2px;
+	height: 1.5em;
+	font-size: 12px
+}
+
+html>body #listaTarefas li {
+	height: 1.5em;
+	line-height: 1.2em;
+}
+
+.ui-state-highlight {
+	height: 1.5em;
+	line-height: 1.2em;
+}
+
+.ui-state-default {
+	background-image: none;
+	background-color: #f8f8f8;
+	color: #0066cc;
+}
+
+#progressBar {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.kanbanStep {
+	display: inline;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	cursor: pointer !important;
+}
+
+.checklist {
+	display: block;
+	margin-top: 15px;
+}
+
+.checklist .title {
+	font-weight: bold;
+}
+
+.checklist .ui-icon-close {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.buttons {
+	clear: both;
+}

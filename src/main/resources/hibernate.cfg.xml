@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- properties -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.jdbc.fetch_size">20</property>
+		<property name="hibernate.jdbc.batch_size">20</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.connection.autocommit">false</property>
+		<property name="connection.autocommit">false</property>
+
+		<!-- cache -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		<property name="hibernate.cache.use_structured_entries">false</property>
+		<property name="javax.persistence.sharedCache.mode">ENABLE_SELECTIVE</property>
+
+		<!-- core classes -->
+		<mapping class="br.com.bluesoft.pronto.core.Backlog" />
+		<mapping class="br.com.bluesoft.pronto.core.KanbanStatus" />
+		<mapping class="br.com.bluesoft.pronto.core.Papel" />
+		<mapping class="br.com.bluesoft.pronto.core.TipoDeTicket" />
+		<mapping class="br.com.bluesoft.pronto.core.TipoRetrospectivaItem" />
+		<mapping class="br.com.bluesoft.pronto.core.TipoRetrospectiva" />
+
+		<!-- model classes -->
+		<mapping class="br.com.bluesoft.pronto.model.Categoria" />
+		<mapping class="br.com.bluesoft.pronto.model.CausaDeDefeito" />
+		<mapping class="br.com.bluesoft.pronto.model.Configuracao" />
+		<mapping class="br.com.bluesoft.pronto.model.Cliente" />
+		<mapping class="br.com.bluesoft.pronto.model.Modulo" />
+		<mapping class="br.com.bluesoft.pronto.model.MovimentoKanban" />
+		<mapping class="br.com.bluesoft.pronto.model.MotivoReprovacao" />
+		<mapping class="br.com.bluesoft.pronto.model.Projeto" />
+		<mapping class="br.com.bluesoft.pronto.model.Sprint" />
+		<mapping class="br.com.bluesoft.pronto.model.Ticket" />
+		<mapping class="br.com.bluesoft.pronto.model.Usuario" />
+		<mapping class="br.com.bluesoft.pronto.model.TicketLog" />
+		<mapping class="br.com.bluesoft.pronto.model.TicketComentario" />
+
+		<mapping class="br.com.bluesoft.pronto.model.Retrospectiva" />
+		<mapping class="br.com.bluesoft.pronto.model.RetrospectivaItem" />
+		
+		<mapping class="br.com.bluesoft.pronto.model.Checklist" />
+		<mapping class="br.com.bluesoft.pronto.model.ChecklistItem" />
+
+		<mapping class="br.com.bluesoft.pronto.model.BancoDeDados" />
+		<mapping class="br.com.bluesoft.pronto.model.Script" />
+		<mapping class="br.com.bluesoft.pronto.model.Execucao" />
+		
+		<mapping class="br.com.bluesoft.pronto.model.Milestone" />
+
+	</session-factory>
+</hibernate-configuration>

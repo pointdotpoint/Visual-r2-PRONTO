@@ -1,0 +1,127 @@
+#kanbanTable tr,#kanbanTable td {
+	vertical-align: top;
+	width: 100%;
+}
+
+.kanbanColumn.custom-state-active {
+	background: #eee;
+}
+
+.kanbanColumn {
+	border-right: #d2d2d2 1px dotted;
+	border-left:  #d2d2d2 1px dotted;
+	border-bottom: #d2d2d2 1px dotted;
+}
+
+#impedidosDoUsuario, #impedidosDoUsuario a {
+	color:red;
+}
+
+
+
+.quantidade {
+	font-size: 10px;
+	color: gray;
+	float: right;
+}
+
+.kanban-header {
+	padding: 2px;
+}
+
+.kanbanColumn li {
+	float: left;
+	width: 100px;
+	padding: 0.4em;
+	margin: 0 0.4em 0.4em 0;
+	text-align: center;
+}
+
+.kanbanColumn li h5 {
+	margin: 0 0 0.4em;
+	cursor: move;
+}
+
+.drop {
+	height: 100%;
+	min-height: 200px;
+}
+
+.ticket {
+	height: 100px;
+	font-family: "Lucida Grande", Trebuchet MS, verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+	cursor: crosshair;
+}
+
+.ticketKey {
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+.avatares {
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+	padding: 2px;
+	margin-top: 2px;
+}
+
+.avatares img {
+	border: solid white 1px;
+	
+}
+
+.bug {
+	background-color: #ffe3e3;
+	border-color: #ffcccc;
+	color: #a64242;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.story {
+	background-color: #e8f4d9;
+	border-color: #d3e8ba;
+	color: #468a37;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.task {
+	background-color: #ebf6ff;
+	border-color: #c3e5ff;
+	color: #3977a6;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.ticket-icon {
+	float: right;
+}
+
+.impedido {
+	background-color: #ffd673;
+	border-color: #ffb640;
+	color: #a66600;
+	border-width: 1px;
+	border-style: solid;
+	opacity:0.6;
+	filter:alpha(opacity=60)
+}
+
+.kanban-area {
+	height: 100%;
+}
+
+#meta {
+	font-weight: bold;
+	color: gray;
+	font-size: 13px;	
+}
+
+#texto-de-ajuda {
+	clear: both;
+	font-style: italic;
+	float: right;
+	font-size: 10px;
+}
